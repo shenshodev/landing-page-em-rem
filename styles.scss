@@ -1,0 +1,416 @@
+/* -------- RESET -------- */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    // font-size: 100%;
+    // font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    // line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* -------- GENERIC ITEMS -------- */
+
+html{
+    font-size: 16px;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto Condensed';
+}
+
+p {
+    margin-bottom: 2.5rem;
+    font-size: 1.25rem;
+}
+
+.title {
+    margin-bottom: 2.5rem;
+    font-family: 'Stint Ultra Condensed';
+    font-size: 3.75em;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.625rem 2.5rem;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s;
+    &:hover{
+        background-color: #7e8f1c;
+    }
+}
+
+.content {
+    padding: 5rem 0;
+}
+
+/* -------- HEADER -------- */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28.125em;
+    background: url(img/dummy-header.jpg) no-repeat center top;
+    background-size: cover;
+    img{
+        width: 14.4375em;
+        height: auto;
+    }
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #7e8f1c;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px dashed #d6e199;
+        font-size: 1.75em;
+        li{
+            a{
+                display: inline-block;
+                padding: 1.25rem;
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family:  'Stint Ultra Condensed';
+                transition: all 0.3s;
+                &:hover{
+                    background: #acc233;
+                }
+            }
+        }
+    }
+    .hamburger{
+        display: none;
+        cursor: pointer;
+        padding: 0.3125rem;
+        .bar{
+            display: block;
+            width: 1.5625rem;
+            height: 3px;
+            margin: 0.3125rem 0;
+            transition: all 0.3s ease;
+            background-color: #fff;
+        }
+    }
+}
+
+
+/* -------- QUIENES SOMOS -------- */
+
+.who {
+    background: #acc233;
+    color: #fff;
+    P{
+        max-width: 65.9375rem;
+        margin: 0 auto;
+    }
+}
+
+/* -------- TRATAMIENTOS -------- */
+
+.tratamientos {
+    background: #566119;
+    color: #fff;
+}
+
+.list-tratamientos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(100%, 440px);
+    margin-inline: auto;
+    li {
+        figure{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 6.25em;
+            height: 6.25em;
+    
+            &::after{
+                content: " ";
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 0;
+                background: #fff;
+                border-radius: 50%;
+                width: 6.25em;
+                height: 6.25em;
+            }
+    
+            img {
+                position: relative;
+                z-index: 1;
+                max-width: 3em;
+                height: auto;
+            }
+
+            figcaption {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -2.5em;
+            }
+        }
+    }
+
+
+}
+
+/* -------- TARIFAS -------- */
+
+.tarifas {
+    background: url(img/dummy-tarifas.jpg) no-repeat center;
+    background-size: cover;
+    object-fit: cover;
+    color: #fff;
+    text-align: left;
+
+    .contain {
+        max-width: 65.9375em;
+        margin: 0 auto;
+    }
+
+    p {
+        max-width: 28.125em;
+    }
+}
+
+/* -------- LOCALIZACION -------- */
+
+.localizacion {
+    color: #566119;
+    padding-bottom: 0;
+    .map{
+        img{
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+
+@media(max-width: 1023px){
+    html{
+        font-size: 14px;
+    }
+
+    .header{
+        font-size: 10px;
+    }
+    
+    .navbar{
+        position: static;
+        .nav{
+            font-size: 24px;
+        }
+    }
+
+    .tarifas{
+        text-align: center;
+        p{
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    html{
+        font-size: 16px;
+    }
+
+    .header{
+        font-size: 8px;
+        margin-top: 2.4375rem;;
+    }
+
+    .navbar{
+        .nav{
+            font-size: 20px;
+            background-color: #7e8f1c;
+            position: fixed;
+            gap: 0;
+            z-index: 10;
+            flex-wrap: wrap;
+            width: 100%;
+            text-align: center;
+            transition: all 0.3s ease;
+            li{
+                flex-basis: 100%;
+                a{
+                    display: block;
+                }
+            }
+            &.top-to-bottom{
+                top: -100%;
+                left: 0;
+                right: 0;
+                &.active{
+                    top: 2.4375rem;
+                }
+            }
+        }
+        .hamburger{
+            background-color: #7e8f1c;
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            &.active{
+                .bar{
+                    &:nth-child(1){
+                        transform: translateY(8px) rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        opacity: 0;
+                    }
+                    &:nth-child(3){
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
