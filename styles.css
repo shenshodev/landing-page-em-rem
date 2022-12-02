@@ -311,9 +311,6 @@ p {
   .header {
     font-size: 10px;
   }
-  .navbar {
-    position: static;
-  }
   .navbar .nav {
     font-size: 24px;
   }
@@ -331,6 +328,9 @@ p {
   .header {
     font-size: 8px;
     margin-top: 2.4375rem;
+  }
+  .navbar {
+    position: static;
   }
   .navbar .nav {
     font-size: 20px;
@@ -364,6 +364,7 @@ p {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
   }
   .navbar .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);

@@ -341,7 +341,6 @@ p {
     }
     
     .navbar{
-        position: static;
         .nav{
             font-size: 24px;
         }
@@ -366,6 +365,7 @@ p {
     }
 
     .navbar{
+        position: static;
         .nav{
             font-size: 20px;
             background-color: #7e8f1c;
@@ -398,6 +398,7 @@ p {
             top: 0;
             left: 0;
             right: 0;
+            z-index: 10;
             &.active{
                 .bar{
                     &:nth-child(1){
