@@ -256,7 +256,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: min(100%, 440px);
+    width: min(100%, 27.5em);
     margin-inline: auto;
     li {
         figure{
@@ -331,7 +331,7 @@ p {
 }
 
 
-@media(max-width: 1023px){
+@media(max-width: 63.9375em){
     html{
         font-size: 14px;
     }
@@ -354,7 +354,7 @@ p {
     }
 }
 
-@media(max-width: 767px){
+@media(max-width: 47.9375em){
     html{
         font-size: 16px;
     }
